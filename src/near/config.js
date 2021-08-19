@@ -24,7 +24,7 @@ const configs = {
 const createHelpers = (config) => ({
   getCheckAccountInExplorerUrl: (accountId) => `${config.explorerUrl}/accounts/${accountId}`,
   getCreateAccountAndClaimLink: (secretKey) =>
-    `${config.walletUrl}/create/${config.linkDropContractId}/${secretKey}`,
+    `${config.walletUrl}/linkdrop/${config.linkDropContractId}/${secretKey}`,
 });
 
 const getNearConfig = (network) => {
