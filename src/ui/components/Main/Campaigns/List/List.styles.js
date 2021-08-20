@@ -4,7 +4,8 @@ const styles = {
   container: {
     gridArea: 'b',
     display: 'flex',
-    justifyContent: 'center',
+    flexDirection: 'column',
+    alignItems: 'center',
   },
   wrapper: {
     maxWidth: 350,
