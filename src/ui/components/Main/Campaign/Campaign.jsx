@@ -4,6 +4,7 @@ import { Typography, IconButton } from '@material-ui/core';
 import { ArrowBack } from '@material-ui/icons';
 import { CampaignProfileCard } from '../general/CampaignProfileCard/CampaignProfileCard';
 import { AdditionalData } from './AdditionalData/AdditionalData';
+import { WarningDownloadLinks } from '../general/WarningDownloadLinks/WarningDownloadLinks';
 import { Links } from './Links/Links';
 import { routes } from '../../../config/routes';
 import { useStyles } from './Campaign.styles';
@@ -22,6 +23,7 @@ export const Campaign = () => {
         <Typography variant="h3">{campaign.name}</Typography>
       </div>
       <div className={classes.body}>
+        <WarningDownloadLinks />
         <CampaignProfileCard campaign={campaign} />
         <AdditionalData campaign={campaign} />
         <Links campaign={campaign} />
