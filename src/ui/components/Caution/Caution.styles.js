@@ -1,6 +1,6 @@
 import { makeStyles } from '@material-ui/core';
 
-const styles = (theme) => ({
+const styles = {
   container: {
     width: '100vw',
     height: 50,
@@ -25,6 +25,6 @@ const styles = (theme) => ({
   link: {
     textDecoration: 'underline',
   },
-});
+};
 
 export const useStyles = makeStyles(styles, { name: 'Caution' });
