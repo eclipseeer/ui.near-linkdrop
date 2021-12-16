@@ -8,8 +8,11 @@ export const Caution = () => {
       <ErrorOutline className={classes.icon} />
       <span className={classes.caution}>CAUTION:</span>
       <span>
-        The NEAR Linkdrop is beta software and <span className={classes.bold}>IS NOT AUDITED</span>.
-        Use at your own responsibility.
+        This app will be <span className={classes.bold}>SHUT DOWN on January 10, 2022</span>. Please
+        make sure you have exported your links. New app is available -{' '}
+        <a href="https://app.neardrop.io" className={classes.link}>
+          neardrop.io
+        </a>
       </span>
     </div>
   );
